@@ -1,0 +1,42 @@
+{
+  "both_none": {"status_code": 400,
+    "message": "Missing required parameter in the Json body"
+  },
+
+  "mobile_none": {"code": "8888",
+    "status_code": 400,
+    "message": "Missing required parameter in the Json body"
+  },
+
+  "code_none": {"mobile": "15816875503",
+    "status_code": 400,
+    "message": "Missing required parameter in the Json body"
+  },
+
+  "mobile_wrong": {"mobile": "123758",
+    "code": "8888",
+    "status_code": 400,
+    "message": "is not a valid mobile"
+  },
+
+  "code_wrong_format": {"mobile": "15816875503",
+    "code": "abcd",
+    "status_code": 400,"message": "Invalid params",
+  },
+
+  "code_wrong": {"mobile": "15816875503",
+    "code": "999999",
+    "status_code": 400,"message": "Invalid code",
+  },
+
+  "code_timeout": {"mobile": "15816875503",
+    "code":"4787579",
+    "status_code": 400,
+    "message": "Invalid code"},
+
+  "both_right": {"mobile": "15816875503",
+    "code":"",
+    "status_code": 201,
+    "message": "ok"}
+}
+
