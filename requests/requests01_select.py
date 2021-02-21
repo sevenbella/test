@@ -22,3 +22,9 @@ print('状态码', response.status_code)
 print('响应体', response.text)
 
 
+
+print('响应体', response.text)
+
+
+
+
